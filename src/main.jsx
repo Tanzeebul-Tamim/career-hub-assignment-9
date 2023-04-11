@@ -8,7 +8,7 @@ import Main from './components/Layout/Main';
 import AppliedJobs from './components/Layout/Outlets/AppliedJobs/AppliedJobs';
 import Blog from './components/Layout/Outlets/Blog/Blog';
 import Home from './components/Layout/Outlets/Home/Home';
-import Statistics from './components/Layout/Outlets/Staistics/Statistics';
+import Statistics from './components/Layout/Outlets/Statistics/Statistics';
 import './index.css';
 
 const router = createBrowserRouter([
