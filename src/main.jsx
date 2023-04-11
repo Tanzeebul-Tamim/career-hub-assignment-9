@@ -18,7 +18,16 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <Home></Home>
+        element: <Home></Home>,
+        loader: async () => {
+          const [categoryResponse] = await Promise.all([
+            fetch('category.json')
+          ]);
+      
+          const categoryData = await categoryResponse.json();
+      
+          return { categoryData };
+        }
       },
       {
         path: '/applied',

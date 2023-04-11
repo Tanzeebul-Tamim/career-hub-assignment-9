@@ -1,20 +1,41 @@
-.active-link a{
-    margin-right: 20px;
-    margin-left: 20px;
-    font-weight: 500;
+.active-link a {
+  margin-right: 20px;
+  margin-left: 20px;
+  font-weight: 500;
+  font-size: 2.2ex;
+  transition: color 0.2s ease-in-out;
 }
 
-.title p{
-    line-height: 120px;
+.navbar {
+  background-size: auto;
+}
+
+.brand-name {
+    transition: 0.2s color ease-in-out;
+}
+
+.brand-name:hover{
+    color: #b182fd;
+}
+
+.active-link a:hover {
+  color: #bd94ffca;
+}
+
+.title p {
+  line-height: 110px;
 }
 
 .title-purple {
-    color: #9873FF;
+  background: linear-gradient(90deg, #7e8ffebc 0%, #7b4cfe 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
+
 .banner-des {
-    max-width: 75%;
-    color: rgb(90, 90, 90);
-    font-weight: 500;
-    font-size: 2.5ex;
+  max-width: 50%;
+  color: rgb(90, 90, 90);
+  font-weight: 400;
+  font-size: 2.5ex;
 }
