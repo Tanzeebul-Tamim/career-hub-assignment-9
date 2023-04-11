@@ -42,7 +42,7 @@ const Header = () => {
               <p>Dream Career</p>
               <p className="title-purple">into Reality</p>
             </h1>
-            <p className="banner-des">
+            <p className="w-1/2 description">
               Welcome to <strong>HireSphere</strong>, your go-to destination for finding
               your dream job. Join our community of job seekers today
               and take the next step in your career journey.
