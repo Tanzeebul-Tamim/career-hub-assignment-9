@@ -37,7 +37,7 @@ const Header = () => {
       {location.pathname === "/" && (
         <div className="home-header flex justify-between items-center mt-20">
           <div className="flex flex-col gap-7">
-            <h1 className="title text-8xl font-bold">
+            <h1 className="title text-8xl font-bold text-slate-800">
               <p>Turn Your</p>
               <p>Dream Career</p>
               <p className="title-purple">into Reality</p>
