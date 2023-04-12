@@ -6,6 +6,25 @@ import { faSackDollar, faIdCard, faPhone, faEnvelope, faMapMarkerAlt } from '@fo
 
 const JobDetail = () => {
     const jobDetail = useLoaderData();
+    const handleAppliedJobs = job => {
+        const previousApplied = JSON.parse(localStorage.getItem("appliedJob"));
+        let applied = [];
+        const jobCard = job;
+        if (previousApplied) {
+            const alreadyApplied = previousApplied.find((card) => card.id === job.id);
+            if (alreadyApplied) {
+                alert("You have already applied for this job!")
+            }
+            else {
+                applied.push(...previousApplied, jobCard);
+                localStorage.setItem("appliedJob", JSON.stringify(applied));
+            }
+        }
+        else {
+            applied.push(job);
+            localStorage.setItem("appliedJob", JSON.stringify(applied));
+        }
+    }
     return (
         <div id='detail' className='mt-32 description2'>
             <div className='grid gap-4'>
@@ -56,8 +75,8 @@ const JobDetail = () => {
                     </h1>
                 </div>
                 <Link to="/applied" className="btn-container">
-                <button className="primary-btn w-full">
-                  Start Applying
+                <button onClick={() => handleAppliedJobs(jobDetail)} className="primary-btn w-full">
+                  Apply Now
                 </button>
               </Link>
             </div>

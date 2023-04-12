@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { createContext } from 'react';
 import { Outlet } from 'react-router-dom';
 import ScrollToTop from '../ScrollToTop/ScrollToTop';
 import Footer from './Footer/Footer';
 import Header from './Header/Header';
 
 const Main = () => {
+    const handleAddToApplied = id => {
+        console.log(id)
+    }
+    const AppliedJobContext = createContext(handleAddToApplied)
     return (
         <div>
             <ScrollToTop></ScrollToTop>
