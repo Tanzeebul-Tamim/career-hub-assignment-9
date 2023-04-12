@@ -7,7 +7,7 @@ const Blog = () => {
         <p className="font-bold">Things you should know as a web-developer</p>
       </div>
       <div className="text-xl mx-20">
-        <ol style={{listStyle: "disc"}}>
+        <ol className="flex flex-col gap-8" style={{listStyle: "disc"}}>
             <li>
               <p className="font-bold">When should you use context API?</p>
               <p>- You should use the Context API in React when you need to pass data down to multiple components without having to explicitly pass props through every level of the component tree.</p>
