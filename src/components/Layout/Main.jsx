@@ -3,6 +3,8 @@ import { Outlet } from 'react-router-dom';
 import ScrollToTop from '../ScrollToTop/ScrollToTop';
 import Footer from './Footer/Footer';
 import Header from './Header/Header';
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Main = () => {
     const handleAddToApplied = id => {
@@ -17,6 +19,17 @@ const Main = () => {
                 <Outlet></Outlet>
             </div>
             <Footer></Footer>
+            <ToastContainer
+            position="top-center"
+            autoClose={5000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            theme="colored"/>
         </div>
     );
 };

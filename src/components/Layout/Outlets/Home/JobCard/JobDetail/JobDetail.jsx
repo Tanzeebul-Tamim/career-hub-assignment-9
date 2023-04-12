@@ -3,6 +3,7 @@ import { Link, useLoaderData } from 'react-router-dom';
 import './JobDetail.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSackDollar, faIdCard, faPhone, faEnvelope, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
+import { ToastContainer, toast } from "react-toastify";
 
 const JobDetail = () => {
     const jobDetail = useLoaderData();
@@ -13,16 +14,45 @@ const JobDetail = () => {
         if (previousApplied) {
             const alreadyApplied = previousApplied.find((card) => card.id === job.id);
             if (alreadyApplied) {
-                alert("You have already applied for this job!")
+                toast.warn("You have already applied for this job!!", {
+                    position: "top-left",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "colored",
+                  });
             }
             else {
                 applied.push(...previousApplied, jobCard);
                 localStorage.setItem("appliedJob", JSON.stringify(applied));
+                toast.success("Application submitted!", {
+                    position: "top-left",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "colored",
+                  });
             }
         }
         else {
             applied.push(job);
             localStorage.setItem("appliedJob", JSON.stringify(applied));
+            toast.success("Application submitted!", {
+                position: "top-left",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "colored",
+              });
         }
     }
     return (
@@ -74,7 +104,7 @@ const JobDetail = () => {
                         <strong>Address:</strong> <span className='font-medium'>{jobDetail.address}</span>
                     </h1>
                 </div>
-                <Link to="/applied" className="btn-container">
+                <Link className="btn-container">
                 <button onClick={() => handleAppliedJobs(jobDetail)} className="primary-btn w-full">
                   Apply Now
                 </button>

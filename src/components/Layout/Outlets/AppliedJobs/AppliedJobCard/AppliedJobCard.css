@@ -1,0 +1,9 @@
+.ap-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.applied-job-card {
+  display: flex;
+  justify-content: center;
+}
