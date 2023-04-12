@@ -4,3 +4,12 @@
 .pending{
     color: #7d7d7d;
 }
+
+@media only screen and (max-width: 576px) {
+    .active {
+        color: #8000ffcb;
+    }
+    .pending{
+        color: #3b0a8b9b;
+    }
+}

@@ -45,10 +45,10 @@ const Footer = () => {
       </div>
 
       <div className="flex md:justify-between md:flex-row flex-col">
-        <h1 className="text-sm text-center md:text-xl text-stone-500">
+        <h1 className="text-sm text-center md:text-lg text-stone-500">
             @2023 HireSphere. All Rights Reserved
         </h1>
-        <h1 className="text-sm text-center md:text-xl text-stone-500">
+        <h1 className="text-sm text-center md:text-lg text-stone-500">
             Powered by <strong>HireSphere</strong>
         </h1>
       </div>

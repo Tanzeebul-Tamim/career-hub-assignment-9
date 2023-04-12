@@ -23,7 +23,7 @@ const JobCard = ({jobCard}) => {
                     <h1 className='text-sm md:text-xl'>Salary: {jobCard.salary}</h1>
                 </div>
             </div>
-            <Link to="/applied" className="job-btn-container">
+            <Link key={jobCard.id} to={`/jobs/${jobCard.id}`} className="job-btn-container">
               <button className="job-btn">View Details</button>
             </Link>
         </div>
