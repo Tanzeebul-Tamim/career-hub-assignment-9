@@ -42,7 +42,7 @@ const Header = () => {
               <p>Dream Career</p>
               <p className="title-purple">into Reality</p>
             </h1>
-            <p className="w-1/2 description">
+            <p className="w-4/5 description">
               Welcome to <strong>HireSphere</strong>, your go-to destination for finding
               your dream job. Join our community of job seekers today
               and take the next step in your career journey.
@@ -53,7 +53,7 @@ const Header = () => {
           </div>
 
           <div>
-            <img src="/public/images/P3OLGJ1 copy 1.png" alt="" />
+            <img src="https://i.ibb.co/wgTyzLH/recruitment-concept-job-search-flat-vector-people-workers-business-metaphor-employees-looking-jobs-g.png" alt="" />
           </div>
         </div>
       )}
