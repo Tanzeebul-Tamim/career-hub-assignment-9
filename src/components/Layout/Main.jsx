@@ -7,7 +7,7 @@ const Main = () => {
     return (
         <div>
             <Header></Header>
-            <div className="mx-24 mb-32">
+            <div className="md:mx-24 mx-5 mb-32">
                 <Outlet></Outlet>
             </div>
             <Footer></Footer>
