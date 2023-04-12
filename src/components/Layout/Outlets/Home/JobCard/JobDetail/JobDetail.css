@@ -1,0 +1,19 @@
+strong {
+  color: rgb(69, 69, 69);
+}
+
+#detail {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 25px;
+}
+
+.job-detail {
+  background: linear-gradient(
+    90deg,
+    rgba(126, 143, 254, 0.169) 0%,
+    rgba(152, 115, 255, 0.09) 100%
+  );
+  border-radius: 8px;
+  padding: 40px;
+}
