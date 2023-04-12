@@ -77,6 +77,24 @@ const Header = () => {
             </div>
             )
           }    
+          {
+            (location.pathname === "/statistics") && (
+            <div className="my-32">
+              <h1 className="text-5xl font-bold text-slate-800 text-center">
+               Statistics
+              </h1>
+            </div>
+            )
+          }    
+          {
+            (location.pathname === "/blog") && (
+            <div className="my-32">
+              <h1 className="text-5xl font-bold text-slate-800 text-center">
+               Blogs
+              </h1>
+            </div>
+            )
+          }    
         </div>
 
         {location.pathname === "/" && (

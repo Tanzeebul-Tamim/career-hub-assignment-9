@@ -7,10 +7,6 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const Main = () => {
-    const handleAddToApplied = id => {
-        console.log(id)
-    }
-    const AppliedJobContext = createContext(handleAddToApplied)
     return (
         <div>
             <ScrollToTop></ScrollToTop>
